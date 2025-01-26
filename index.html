@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <title>FolkLove2025 - Folklor żyje w nas</title>
-   <style>
+    <style>
         body {
             font-size: large;
             font-weight: 200;
@@ -102,7 +102,38 @@
             flex-wrap: wrap;
            
         }
+
+        .text {
+    max-height: 80px; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    transition: max-height 0.3s ease;
+}
+
+.text.expanded {
+    max-height: none; 
+    white-space: normal;
+}
+
+.toggle-text {
+    background-color: #9A6735;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin: 10px auto 0;
+    font-size: 16px;
+    display: block; 
+    transition: background-color 0.3s ease;
+}
+
+.toggle-text:hover {
+    background-color: #614121;
+}
     </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -135,7 +166,43 @@
 
         <section id="events">
             <h2>Wydarzenia</h2>
+
             
+          
+            <div class="zdjecia">
+                <img src="51.jpg" alt="">
+                <img src="52.jpg" alt="">
+                <img src="53.jpg" alt="">
+                <img src="54.jpg" alt="">
+            </div>
+            <p class="text">W ramach Ogólnopolskiej Olimpiady Zwolnieni z Teorii dnia 17 stycznia 2025r. zespół projektu Folklove2025 w składzie: Oliwia Dadacz, Filip Gawenda, Oliwia Tchorek, Zuzanna Buława, Bartosz Zadróżny oraz gościnnie Kinga Mazek i Amelia Zabłocka odwiedził Niepubliczne Przedszkole Juniorek w Garwolinie. Zespół wystawił tradycyjne „Herody Garwolińskie”, przybliżając dzieciom piękno lokalnego folkloru i dawnych tradycji. Przedszkolaki żywo reagowały na rozgrywające się wydarzenia i z zainteresowaniem przyglądały się występującym postaciom. Po spektaklu uczniowie zaproponowali małym milusińskim wspólne zabawy, ciesząc się ich energią i uśmiechami! Cała wizyta przebiegła w ciepłej i miłej atmosferze. Opiekun p. Edyta Kacprowicz 😘🥰
+            </p>
+            <button class="toggle-text">Czytaj więcej</button>
+            <hr>
+
+
+            <div class="zdjecia">
+                <img src="41.jpg" alt="">
+                <img src="42.jpg" alt="">
+                <img src="43.jpg" alt="">
+                <img src="44.jpg" alt="">
+            </div>
+            <p class="text">9 stycznia 2025 r. zespół FolkLove2025 wystąpił podczas spotkania opłatkowego Sekcji Emerytów i Rencistów Związku Nauczycielstwa Polskiego w Garwolinie, prezentując „Herody Garwolińskie”. Herody to tradycyjne ludowe przedstawienie bożonarodzeniowe, które w humorystyczny sposób ukazuje historię króla Heroda i narodzin Jezusa.😘💙🍀</p>
+            <button class="toggle-text">Czytaj więcej</button>
+            <hr>
+
+
+            <div class="zdjecia">
+                <img src="31.jpg" alt="">
+                <img src="32.jpg" alt="">
+                <img src="33.jpg" alt="">
+                <img src="34.jpg" alt="">
+            </div>
+            <p class="text">20 grudnia 2024 r. nasz zespół  wystawił „Herody Garwolińskie”, tekst został przygotowany przez p. Agnieszkę Karwowską do książki p. Jadwigi Krześniak „Cztery pory roku w obrzędowości ludowej”, którą chcemy wydać. Przedstawienie przygotowaliśmy dzięki wsparciu i zaangażowaniu naszej Mentor p. Angeliki Chabrowskiej. Kolędnicy od zawsze stanowili nieodłączny element folkloru ludowego podczas świąt Bożego Narodzenia. Pojawiali się w domach wieczorem w pierwszy dzień Świąt, przynosząc radosną atmosferę oraz odtwarzając barwne sceny nawiązujące do biblijnej historii narodzin Jezusa Chrystusa. Także na ziemi garwolińskiej tradycja ta miała i nadal ma swoje miejsce. Korowód przebierańców określano mianem Herodów. Ich występy to inscenizacje przedstawiające narodziny Chrystusa oraz rzeź niewiniątek w Betlejem. Główną, choć negatywną postacią tych przedstawień jest król Herod. Jego przybycie zapowiada zwykle wierny Pachołek lub Het Marszałek. W spektaklu pojawiają się także żołnierze, Żyd, Śmierć☠️ odbierająca życie Herodowi oraz Diabeł,👹 który z widłami przybiega po jego duszę. Niestety, tradycja wystawiania Herodów powoli zanika. Współcześnie grupy młodzieży odwiedzające domy ograniczają się często do zaśpiewania jednej kolędy, po czym kończą swój występ.❄️🎄🌲</p>
+            <button class="toggle-text">Czytaj więcej</button>
+            <hr>
+
+
             <h4>Niesamowite spotkanie z folklorem!</h4>
 
             <div class="zdjecia">
@@ -144,11 +211,13 @@
                 <img src="folk3.jpg" alt="">
                 <img src="folk4.jpg" alt="">
             </div>
-            <p>11 grudnia 2024 roku mieliśmy przyjemność uczestniczyć w wyjątkowym wydarzeniu, podczas którego Pani Jadwiga Krześniak, pasjonatka folkloru, przybliżyła nam zanikające tradycje i obrzędy związane z obchodami Świąt Bożego Narodzenia. Podzieliła się z nami notatkami swojego taty oraz nauczyła nas tworzenia różnorodnych ozdób świątecznych, które dawniej zdobiły choinki.
+            <p class="text">11 grudnia 2024 roku mieliśmy przyjemność uczestniczyć w wyjątkowym wydarzeniu, podczas którego Pani Jadwiga Krześniak, pasjonatka folkloru, przybliżyła nam zanikające tradycje i obrzędy związane z obchodami Świąt Bożego Narodzenia. Podzieliła się z nami notatkami swojego taty oraz nauczyła nas tworzenia różnorodnych ozdób świątecznych, które dawniej zdobiły choinki.
                 Pani Jadwiga opowiedziała o symbolice dekoracji świątecznych oraz zaprezentowała ciekawe i zabawne przysłowia związane z pogodą. Mieliśmy również okazję zadać jej kilka pytań i nagrać krótki wywiad.
                 Relację z tego wydarzenia możecie znaleźć na naszych projektowych profilach w mediach społecznościowych. Zachęcamy Was szczególnie do obejrzenia filmu z wywiadu, w którym Pani Jadwiga dzieli się swoją wiedzą i pasją! Jeśli interesują Was nasze działania, zapraszamy do polubienia i obserwowania naszych kanałów!
             </p>
+            <button class="toggle-text">Czytaj więcej</button>
             <hr>
+
             <br>
             <div class="zdjecia">
                 <img src="folk21.jpg" alt="">
@@ -156,12 +225,13 @@
                 <img src="folk23.jpg" alt="">
                 <img src="folk24.jpg" alt="">
             </div>
-            <p>2 grudnia 2024 roku, z inicjatywy uczniów realizujących projekt FolkLove2025 w ramach Olimpiady Zwolnieni z Teorii, odbyły się warsztaty bożonarodzeniowe prowadzone przez panią Edytę Sak z Muzeum Regionalnego w Łukowie oraz pana Krzysztofa Osaka, twórców ludowych. W trakcie warsztatów uczestnicy wykonywali gwiazdy z opłatka, które były tradycyjnymi ozdobami umieszczanymi na podłaźniczce.❄️🌨️🎄
+            <p class="text">2 grudnia 2024 roku, z inicjatywy uczniów realizujących projekt FolkLove2025 w ramach Olimpiady Zwolnieni z Teorii, odbyły się warsztaty bożonarodzeniowe prowadzone przez panią Edytę Sak z Muzeum Regionalnego w Łukowie oraz pana Krzysztofa Osaka, twórców ludowych. W trakcie warsztatów uczestnicy wykonywali gwiazdy z opłatka, które były tradycyjnymi ozdobami umieszczanymi na podłaźniczce.❄️🌨️🎄
                 Podłaźniczka, zawieszana u pułapu nad stołem wigilijnym, była przystrajana jabłkami, orzechami, ozdobami z papieru oraz gwiazdami z kolorowego opłatka. Gałęzie (lub czubek) drzewa iglastego ścinano na podłaźniczkę w Wigilię bardzo wcześnie rano, a gospodarz, który jako pierwszy wniósł ją do izby, miał zapewnić sobie najwcześniejszy wzrost i dojrzewanie zboża w nadchodzącym roku.
                 Pani Edyta Sak w barwny sposób przybliżyła młodzieży bożonarodzeniowe tradycje i obyczaje polskie, ukazując bogactwo ich symboliki. Na przykład liczba dwanaście odnosi się jednocześnie do dwunastu apostołów, dwunastu miesięcy w roku oraz dwunastu wigilijnych potraw. Koniec Adwentu obwieszczała natomiast gra na ligawie, tradycyjnym instrumencie, na którym uczniowie mieli okazję spróbować swoich sił podczas warsztatów. Choć gra na ligawie nie jest łatwa, naszemu koledze, Mateuszowi Wasążnikowi, udało się opanować podstawy tej sztuki.🎭🖼️🌈🩷
                 Młodzież z zainteresowaniem słuchała opowieści prowadzącej, a dużym entuzjazmem cieszyła się możliwość własnoręcznego wykonania ozdób z kolorowych opłatków.
                 Organizacja warsztatów była możliwa dzięki wsparciu finansowemu Rady Rodziców, za co serdecznie dziękujemy. Tego rodzaju inicjatywy nie tylko propagują, ale także przypominają polskie tradycje, które choć mało znane, są niezwykle interesujące i wartościowe
             </p>
+            <button class="toggle-text">Czytaj więcej</button>
         </section>
 
         <section id="project">
@@ -190,5 +260,24 @@
     <footer>
         <p>&copy; 2024 FolkLove2025</p>
     </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const buttons = document.querySelectorAll(".toggle-text");
+    
+            buttons.forEach(button => {
+                button.addEventListener("click", () => {
+                    const textElement = button.previousElementSibling;
+                    textElement.classList.toggle("expanded");
+    
+                    if (textElement.classList.contains("expanded")) {
+                        button.textContent = "Zwiń tekst";
+                    } else {
+                        button.textContent = "Czytaj więcej";
+                    }
+                });
+            });
+        });
+    </script>
 </body>
+
 </html>
